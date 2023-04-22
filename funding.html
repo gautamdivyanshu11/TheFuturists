@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PledgePort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="funding.css">
+    <link rel="shortcut icon" href="images//pied-piper-pp.ico   " type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97cd3cc0d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  
+  <!--navbar-->
+    <section class="back"> 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/pied-piper-pp.ico" alt="" width="30" height="28"> PledgePort</a>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass-dollar fa-beat fa-xl"></i></button>
+            </form>
+            <div class="create">
+              <button type="button" class="btn btn-success">Create a Campaign</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      
+      <div id="mySidebar" class="sidebar">
+        <a class="options" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="options" href="#"><i class="fa-solid fa-house" style="color: #f0f0f0;"></i> Dashboard</a>
+        <a class="options" href="#"><i class="fa-solid fa-bullhorn" style="color: #f0f0f0;"></i> Campaign</a>
+        <a class="options" href="#"><i class="fa-solid fa-money-check-dollar" style="color: #f0f0f0;"></i> Payment</a>
+        <a class="options" href="#"><i class="fa-solid fa-money-bill-transfer" style="color: #f0f0f0;"></i> withdraw</a>
+        <a class="options" href="#"><i class="fa-regular fa-address-card" style="color: #f0f0f0;"></i> Profile</a>
+        <a class="options" href="#"><i class="fa-solid fa-right-from-bracket" style="color: #f0f0f0;"></i> logout</a>
+        
+        
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+      
+      
+      
+  </section>
+  <h1>MetaMask Transfer</h1>
+  <p>Click the button below to connect to MetaMask:</p>
+  <button id="connect-button">Connect to MetaMask</button>
+  <hr>
+  <p>Please enter the recipient address and the amount of Ether to transfer:</p>
+  <form id="transfer-form">
+    <label for="recipient">Recipient Address:</label>
+    <input type="text" name="recipient" id="recipient"><br><br>
+    <label for="amount">Amount of Ether:</label>
+    <input type="text" name="amount" id="amount"><br><br>
+    <button type="submit">Send</button>
+  </form>
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+   <script src="funding.js" charset="UTF-8"></script>   
+</body>
+</html>
